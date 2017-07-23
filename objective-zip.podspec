@@ -65,4 +65,5 @@ Pod::Spec.new do |s|
   s.xcconfig = { "OTHER_LDFLAGS" => "-ObjC",
                  "GCC_WARN_UNUSED_FUNCTION" => "NO" }
 
+  s.dependency 'chardet', '~> 1.0'
 end

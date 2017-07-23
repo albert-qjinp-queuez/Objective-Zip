@@ -47,6 +47,7 @@
 #import "OZFileInZipInfo.h"
 #import "OZFileInZipInfo+Internals.h"
 #import "NSDate+DOSDate.h"
+#import <chardet/libchardet.h>
 
 #include "zip.h"
 #include "unzip.h"
@@ -67,6 +68,7 @@
     unzFile _unzFile;
 }
 
+@property (strong,nonatomic) CharDetector* detector;
 
 @end
 
@@ -90,6 +92,8 @@
 		_mode= mode;
         _legacy32BitMode= legacy32BitMode;
 		
+        _detector = [[CharDetector alloc] init];
+        
         const char *path= [_fileName cStringUsingEncoding:NSUTF8StringEncoding];
 		switch (mode) {
 			case OZZipFileModeUnzip:
@@ -461,6 +465,9 @@
 	if (err != UNZ_OK)
 		@throw [OZZipException zipExceptionWithError:err reason:@"Error getting current file info of '%@'", _fileName];
 	
+    CharDetectObject * detect = [self.detector detect:filename_inzip];
+    NSLog(@"encoding:%@ confidence:%f", detect.encoding, detect.confidence);
+    
 	NSString *fileNameInZip= [NSString stringWithCString:filename_inzip encoding:NSUTF8StringEncoding];
 	
 	err= unzOpenCurrentFilePassword(_unzFile, NULL);
@@ -483,6 +490,9 @@
 	if (err != UNZ_OK)
 		@throw [OZZipException zipExceptionWithError:err reason:@"Error getting current file info of '%@'", _fileName];
 	
+    CharDetectObject * detect = [self.detector detect:filename_inzip];
+    NSLog(@"encoding:%@ confidence:%f", detect.encoding, detect.confidence);
+    
 	NSString *fileNameInZip= [NSString stringWithCString:filename_inzip encoding:NSUTF8StringEncoding];
 
 	err= unzOpenCurrentFilePassword(_unzFile, [password cStringUsingEncoding:NSUTF8StringEncoding]);
