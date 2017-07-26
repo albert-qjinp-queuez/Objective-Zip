@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3254982A47DFED2781B66BE7 /* Pods_Objective_Zip_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86ECFB04CF08B84B71AA157 /* Pods_Objective_Zip_Tests.framework */; };
+		8136230A4ADEF82B95443382 /* Pods_Objective_Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14D2D33E3D9BFCA656BBC35 /* Pods_Objective_Zip.framework */; };
 		8C33B2C11EC6F0CD00F49381 /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C33B2C01EC6F0CD00F49381 /* crypt.c */; };
 		8C33B2C21EC6F0DA00F49381 /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C33B2C01EC6F0CD00F49381 /* crypt.c */; };
 		8C33B2C51EC6F9AD00F49381 /* NSDate+DOSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C33B2C41EC6F9AD00F49381 /* NSDate+DOSDate.m */; };
@@ -105,6 +107,7 @@
 		8CC2FC7E1B91E65200D5E05F /* libObjective-Zip_OS_X.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC2FC731B91E65200D5E05F /* libObjective-Zip_OS_X.a */; };
 		8CC2FCB91B91EB3500D5E05F /* ObjectiveZip_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2FCB81B91EB3500D5E05F /* ObjectiveZip_Tests.m */; };
 		8CC2FCBA1B91EB3500D5E05F /* ObjectiveZip_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2FCB81B91EB3500D5E05F /* ObjectiveZip_Tests.m */; };
+		CD28880EC154DF5F70F8EC0F /* Pods_Objective_Zip_OS_X_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FFA0DEB0372814C9CA5C3E /* Pods_Objective_Zip_OS_X_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +141,11 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3270E993465C5DD4EB508ED9 /* Pods-Objective-Zip OS X Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-Zip OS X Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-Zip OS X Tests/Pods-Objective-Zip OS X Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		32D79E2BF634B4AD7C7581BE /* Pods-Objective-Zip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-Zip.release.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-Zip/Pods-Objective-Zip.release.xcconfig"; sourceTree = "<group>"; };
+		5CACA83EED48B3D41D661D14 /* Pods-Objective-Zip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-Zip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-Zip/Pods-Objective-Zip.debug.xcconfig"; sourceTree = "<group>"; };
+		66FFA0DEB0372814C9CA5C3E /* Pods_Objective_Zip_OS_X_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Objective_Zip_OS_X_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD1C71A19EC08F07B2B7556 /* Pods-Objective-Zip Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-Zip Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-Zip Tests/Pods-Objective-Zip Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C14E8181773A09F00B84597 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8C1D598C1771057D006D69C3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 		8C33B2C01EC6F0CD00F49381 /* crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypt.c; sourceTree = "<group>"; };
@@ -212,6 +220,10 @@
 		8CC2FC731B91E65200D5E05F /* libObjective-Zip_OS_X.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libObjective-Zip_OS_X.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC2FC7D1B91E65200D5E05F /* Objective-Zip OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objective-Zip OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC2FCB81B91EB3500D5E05F /* ObjectiveZip_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ObjectiveZip_Tests.m; path = "Objective-Zip Tests/ObjectiveZip_Tests.m"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C86ECFB04CF08B84B71AA157 /* Pods_Objective_Zip_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Objective_Zip_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBAE1F929E29D87A74CD5E0A /* Pods-Objective-Zip OS X Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-Zip OS X Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-Zip OS X Tests/Pods-Objective-Zip OS X Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EDAFC21C5C599B08F1A8B092 /* Pods-Objective-Zip Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-Zip Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-Zip Tests/Pods-Objective-Zip Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F14D2D33E3D9BFCA656BBC35 /* Pods_Objective_Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Objective_Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8136230A4ADEF82B95443382 /* Pods_Objective_Zip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +241,7 @@
 			files = (
 				8C33B2CF1EC747A100F49381 /* Security.framework in Frameworks */,
 				8CC2FC631B91E63E00D5E05F /* libObjective-Zip.a in Frameworks */,
+				3254982A47DFED2781B66BE7 /* Pods_Objective_Zip_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +258,7 @@
 			files = (
 				8C33B2D11EC747A800F49381 /* Security.framework in Frameworks */,
 				8CC2FC7E1B91E65200D5E05F /* libObjective-Zip_OS_X.a in Frameworks */,
+				CD28880EC154DF5F70F8EC0F /* Pods_Objective_Zip_OS_X_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +286,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				8C1D598C1771057D006D69C3 /* README.md */,
+				30CD27C45C0B82743D0612B0 /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -281,8 +297,24 @@
 				8C33B2D01EC747A800F49381 /* Security.framework */,
 				8C14E8181773A09F00B84597 /* Security.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				F14D2D33E3D9BFCA656BBC35 /* Pods_Objective_Zip.framework */,
+				66FFA0DEB0372814C9CA5C3E /* Pods_Objective_Zip_OS_X_Tests.framework */,
+				C86ECFB04CF08B84B71AA157 /* Pods_Objective_Zip_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30CD27C45C0B82743D0612B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CACA83EED48B3D41D661D14 /* Pods-Objective-Zip.debug.xcconfig */,
+				32D79E2BF634B4AD7C7581BE /* Pods-Objective-Zip.release.xcconfig */,
+				3270E993465C5DD4EB508ED9 /* Pods-Objective-Zip OS X Tests.debug.xcconfig */,
+				DBAE1F929E29D87A74CD5E0A /* Pods-Objective-Zip OS X Tests.release.xcconfig */,
+				7DD1C71A19EC08F07B2B7556 /* Pods-Objective-Zip Tests.debug.xcconfig */,
+				EDAFC21C5C599B08F1A8B092 /* Pods-Objective-Zip Tests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		8C6D350110E56A4B00B63EFA /* MiniZip */ = {
@@ -440,10 +472,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CC2FC691B91E63E00D5E05F /* Build configuration list for PBXNativeTarget "Objective-Zip" */;
 			buildPhases = (
+				B675552D00017825EAF8A824 /* [CP] Check Pods Manifest.lock */,
 				8CC2FC541B91E63E00D5E05F /* Sources */,
 				8CC2FC551B91E63E00D5E05F /* Frameworks */,
 				8CC2FC561B91E63E00D5E05F /* CopyFiles */,
 				8CC2FCBC1B91ECB000D5E05F /* ShellScript */,
+				DBC582866EDA57ED56114EE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -458,9 +492,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CC2FC6C1B91E63E00D5E05F /* Build configuration list for PBXNativeTarget "Objective-Zip Tests" */;
 			buildPhases = (
+				EBE4217F7B9F2851199BBF87 /* [CP] Check Pods Manifest.lock */,
 				8CC2FC5E1B91E63E00D5E05F /* Sources */,
 				8CC2FC5F1B91E63E00D5E05F /* Frameworks */,
 				8CC2FC601B91E63E00D5E05F /* Resources */,
+				DE343A15F49A00CA5CDA081E /* [CP] Embed Pods Frameworks */,
+				0296311156F22BC19A7F24C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -493,9 +530,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CC2FC871B91E65300D5E05F /* Build configuration list for PBXNativeTarget "Objective-Zip OS X Tests" */;
 			buildPhases = (
+				708414A7F79E2FF0CD08A413 /* [CP] Check Pods Manifest.lock */,
 				8CC2FC791B91E65200D5E05F /* Sources */,
 				8CC2FC7A1B91E65200D5E05F /* Frameworks */,
 				8CC2FC7B1B91E65200D5E05F /* Resources */,
+				013E89A9BFD6898276F30C20 /* [CP] Embed Pods Frameworks */,
+				294F6A8A07B6C2B43E4A9155 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -543,6 +583,7 @@
 				German,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -572,6 +613,66 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		013E89A9BFD6898276F30C20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Objective-Zip OS X Tests/Pods-Objective-Zip OS X Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0296311156F22BC19A7F24C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Objective-Zip Tests/Pods-Objective-Zip Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		294F6A8A07B6C2B43E4A9155 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Objective-Zip OS X Tests/Pods-Objective-Zip OS X Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		708414A7F79E2FF0CD08A413 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		8CC2FCBC1B91ECB000D5E05F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -584,6 +685,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "##########################################\n#\n# c.f. http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#\n# Version 2.7\n#\n# Latest Change:\n# - Supports iPhone 5 / iPod Touch 5 (uses Apple's workaround to lipo bug)\n#\n# Purpose:\n#   Automatically create a Universal static library for iPhone + iPad + iPhone Simulator from within XCode\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n\nset -e\nset -o pipefail\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"false\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{4\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -project \\\"${PROJECT_NAME}.xcodeproj\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\" BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\" SYMROOT=\\\"${SYMROOT}\\\"\n\nxcodebuild -configuration \"${CONFIGURATION}\" -project \"${PROJECT_NAME}.xcodeproj\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nxcrun -sdk iphoneos lipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\necho \"Fetching headers from ${PUBLIC_HEADERS_FOLDER_PATH}\"\necho \"  (if you embed your library project in another project, you will need to add\"\necho \"   a \"User Search Headers\" build setting of: (NB INCLUDE THE DOUBLE QUOTES BELOW!)\"\necho '        \"$(TARGET_BUILD_DIR)/usr/local/include/\"'\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\n# * needs to be outside the double quotes?\ncp -r \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"* \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\nfi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B675552D00017825EAF8A824 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBC582866EDA57ED56114EE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Objective-Zip/Pods-Objective-Zip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE343A15F49A00CA5CDA081E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Objective-Zip Tests/Pods-Objective-Zip Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBE4217F7B9F2851199BBF87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -695,6 +856,7 @@
 /* Begin XCBuildConfiguration section */
 		8CC2FC6A1B91E63E00D5E05F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CACA83EED48B3D41D661D14 /* Pods-Objective-Zip.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -735,6 +897,7 @@
 		};
 		8CC2FC6B1B91E63E00D5E05F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32D79E2BF634B4AD7C7581BE /* Pods-Objective-Zip.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -770,6 +933,7 @@
 		};
 		8CC2FC6D1B91E63E00D5E05F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD1C71A19EC08F07B2B7556 /* Pods-Objective-Zip Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -819,6 +983,7 @@
 		};
 		8CC2FC6E1B91E63E00D5E05F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDAFC21C5C599B08F1A8B092 /* Pods-Objective-Zip Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -940,6 +1105,7 @@
 		};
 		8CC2FC881B91E65300D5E05F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3270E993465C5DD4EB508ED9 /* Pods-Objective-Zip OS X Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -991,6 +1157,7 @@
 		};
 		8CC2FC891B91E65300D5E05F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBAE1F929E29D87A74CD5E0A /* Pods-Objective-Zip OS X Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

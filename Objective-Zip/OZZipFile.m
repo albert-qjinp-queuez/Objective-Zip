@@ -47,7 +47,7 @@
 #import "OZFileInZipInfo.h"
 #import "OZFileInZipInfo+Internals.h"
 #import "NSDate+DOSDate.h"
-#import <chardet/libchardet.h>
+#import <libchardet/libchardet.h>
 
 #include "zip.h"
 #include "unzip.h"
@@ -360,8 +360,8 @@
 	int err= unzGetCurrentFileInfo64(_unzFile, &file_info, filename_inzip, sizeof(filename_inzip), NULL, 0, NULL, 0);
 	if (err != UNZ_OK)
 		@throw [OZZipException zipExceptionWithError:err reason:@"Error getting current file info of '%@'", _fileName];
-	
-	NSString *name= [NSString stringWithCString:filename_inzip encoding:NSUTF8StringEncoding];
+    
+	NSString *name= [self.detector stringForCStr:filename_inzip];
 	
 	OZZipCompressionLevel level= OZZipCompressionLevelNone;
 	if (file_info.compression_method != 0) {
@@ -465,10 +465,7 @@
 	if (err != UNZ_OK)
 		@throw [OZZipException zipExceptionWithError:err reason:@"Error getting current file info of '%@'", _fileName];
 	
-    CharDetectObject * detect = [self.detector detect:filename_inzip];
-    NSLog(@"encoding:%@ confidence:%f", detect.encoding, detect.confidence);
-    
-	NSString *fileNameInZip= [NSString stringWithCString:filename_inzip encoding:NSUTF8StringEncoding];
+	NSString *fileNameInZip= [self.detector stringForCStr:filename_inzip];
 	
 	err= unzOpenCurrentFilePassword(_unzFile, NULL);
 	if (err != UNZ_OK)
@@ -490,10 +487,7 @@
 	if (err != UNZ_OK)
 		@throw [OZZipException zipExceptionWithError:err reason:@"Error getting current file info of '%@'", _fileName];
 	
-    CharDetectObject * detect = [self.detector detect:filename_inzip];
-    NSLog(@"encoding:%@ confidence:%f", detect.encoding, detect.confidence);
-    
-	NSString *fileNameInZip= [NSString stringWithCString:filename_inzip encoding:NSUTF8StringEncoding];
+	NSString *fileNameInZip= [self.detector stringForCStr:filename_inzip];
 
 	err= unzOpenCurrentFilePassword(_unzFile, [password cStringUsingEncoding:NSUTF8StringEncoding]);
 	if (err != UNZ_OK)
