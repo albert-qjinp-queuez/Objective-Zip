@@ -9,7 +9,8 @@ Introduction
 
 Objective-Zip is a small Objective-C library that wraps ZLib and MiniZip in
 an object-oriented friendly way.
-
+forked from https://github.com/gianlucabertani/Objective-Zip
+little addition.
 
 What is contained here
 ----------------------
@@ -42,7 +43,9 @@ Adding Objective-Zip to your project
 The library is distributed via CocoaPods, you can add a dependency in you pod
 file with the following line:
 
-pod 'objective-zip', '~> 1.0'
+pod 'libchardet', :git => 'https://github.com/albert-qjinp-queuez/libchardet.git'
+pod 'code/Objective-Zip', :git => 'https://github.com/albert-qjinp-queuez/code/Objective-Zip.git'
+(static build from project file will not work...)
 
 You can then access Objective-Zip classes with the following import
 statement if you plan to use exception handling:

@@ -147,7 +147,7 @@
 		66FFA0DEB0372814C9CA5C3E /* Pods_Objective_Zip_OS_X_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Objective_Zip_OS_X_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD1C71A19EC08F07B2B7556 /* Pods-Objective-Zip Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-Zip Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-Zip Tests/Pods-Objective-Zip Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C14E8181773A09F00B84597 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		8C1D598C1771057D006D69C3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		8C1D598C1771057D006D69C3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = README.md; sourceTree = "<group>"; };
 		8C33B2C01EC6F0CD00F49381 /* crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypt.c; sourceTree = "<group>"; };
 		8C33B2C31EC6F50400F49381 /* NSDate+DOSDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDate+DOSDate.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		8C33B2C41EC6F9AD00F49381 /* NSDate+DOSDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDate+DOSDate.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -221,6 +221,7 @@
 		8CC2FC7D1B91E65200D5E05F /* Objective-Zip OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objective-Zip OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC2FCB81B91EB3500D5E05F /* ObjectiveZip_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ObjectiveZip_Tests.m; path = "Objective-Zip Tests/ObjectiveZip_Tests.m"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C34B01831F2840D100B1C58E /* objective-zip.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "objective-zip.podspec"; sourceTree = "<group>"; };
+		C3B36EE31F2EB3AE00824B58 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C86ECFB04CF08B84B71AA157 /* Pods_Objective_Zip_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Objective_Zip_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAE1F929E29D87A74CD5E0A /* Pods-Objective-Zip OS X Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-Zip OS X Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-Zip OS X Tests/Pods-Objective-Zip OS X Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EDAFC21C5C599B08F1A8B092 /* Pods-Objective-Zip Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-Zip Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-Zip Tests/Pods-Objective-Zip Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -281,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				C34B01831F2840D100B1C58E /* objective-zip.podspec */,
+				C3B36EE31F2EB3AE00824B58 /* README.md */,
 				8C6D353B10E56BA400B63EFA /* Objective-Zip */,
 				8C6D350110E56A4B00B63EFA /* MiniZip */,
 				8CD8B3E817766056005212EC /* ZLib */,
