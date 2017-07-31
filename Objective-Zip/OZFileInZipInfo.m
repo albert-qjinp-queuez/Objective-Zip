@@ -32,7 +32,10 @@
 //
 
 #import "OZFileInZipInfo.h"
+#define FILE_IN_ZIP_MAX_NAME_LENGTH (256)
 
+#include "zip.h"
+#include "unzip.h"
 
 #pragma mark -
 #pragma mark OZFileInZipInfo extension
@@ -47,6 +50,7 @@
     NSDate *_date;
     NSUInteger _crc32;
     NSString *_name;
+    unz64_file_pos position;
 }
 
 
@@ -56,7 +60,8 @@
 #pragma mark -
 #pragma mark OZFileInZipInfo implementation
 
-@implementation OZFileInZipInfo
+@implementation OZFileInZipInfo{
+}
 
 
 #pragma mark -
@@ -76,10 +81,16 @@
 	return self;
 }
 
+-(void)setPosition:(unz64_file_pos*)pos{
+  self->position = *pos;
+}
+-(unz64_file_pos*)position{
+  return &(self->position);
+}
+
 
 #pragma mark -
 #pragma mark Properties
-
 @synthesize name= _name;
 @synthesize length= _length;
 @synthesize level= _level;

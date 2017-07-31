@@ -33,6 +33,8 @@
 
 #import "OZFileInZipInfo.h"
 
+#include "zip.h"
+#include "unzip.h"
 
 @interface OZFileInZipInfo (Internals)
 
@@ -43,4 +45,5 @@
 - (nonnull instancetype) initWithName:(nonnull NSString *)name length:(unsigned long long)length level:(OZZipCompressionLevel)level crypted:(BOOL)crypted size:(unsigned long long)size date:(nonnull NSDate *)date crc32:(NSUInteger)crc32;
 
 
+@property (assign, nonatomic, nullable)  unz64_file_pos * position;
 @end

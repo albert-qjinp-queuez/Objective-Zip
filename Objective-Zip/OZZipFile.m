@@ -289,6 +289,21 @@
 	return YES;
 }
 
+- (BOOL) locateWithFileInfo:(OZFileInZipInfo *)fileInfo {
+  if (_mode != OZZipFileModeUnzip)
+    @throw [OZZipException zipExceptionWithReason:@"Operation permitted only in Unzip mode"];
+  
+  int err= 0;
+  err = unzGoToFilePos64(_unzFile, fileInfo.position);
+  if (err == UNZ_END_OF_LIST_OF_FILE)
+    return NO;
+
+  if (err != UNZ_OK)
+    @throw [OZZipException zipExceptionWithError:err reason:@"Error localting file in zip of '%@'", _fileName];
+  
+  return YES;
+}
+
 - (BOOL) locateFileInZip:(NSString *)fileNameInZip {
 	if (_mode != OZZipFileModeUnzip)
 		@throw [OZZipException zipExceptionWithReason:@"Operation permitted only in Unzip mode"];
@@ -390,6 +405,13 @@
                                                             size:file_info.compressed_size
                                                             date:date
                                                            crc32:file_info.crc];
+  unz64_file_pos pos;
+  err = unzGetFilePos64(_unzFile, &pos);
+  if (err != UNZ_OK)
+    @throw [OZZipException zipExceptionWithError:err reason:@"Error getting current file info of '%@'", _fileName];
+  
+  info.position = &(pos);
+  
 	return info;
 }
 
@@ -415,6 +437,14 @@
     } ERROR_WRAP_END_AND_RETURN(error, NO);
 }
 
+- (NSInteger) locateWithFileInfo:(OZFileInZipInfo *)fileNameInZip error:(NSError * __autoreleasing *)error{
+  ERROR_WRAP_BEGIN {
+    
+    BOOL located= [self locateWithFileInfo:fileNameInZip];
+    return (located ? OZLocateFileResultFound : OZLocateFileResultNotFound);
+    
+  } ERROR_WRAP_END_AND_RETURN(error, 0);
+}
 - (NSInteger) locateFileInZip:(NSString *)fileNameInZip error:(NSError * __autoreleasing *)error {
     ERROR_WRAP_BEGIN {
         

@@ -220,6 +220,7 @@
 		8CC2FC731B91E65200D5E05F /* libObjective-Zip_OS_X.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libObjective-Zip_OS_X.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC2FC7D1B91E65200D5E05F /* Objective-Zip OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objective-Zip OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC2FCB81B91EB3500D5E05F /* ObjectiveZip_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ObjectiveZip_Tests.m; path = "Objective-Zip Tests/ObjectiveZip_Tests.m"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		C34B01831F2840D100B1C58E /* objective-zip.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "objective-zip.podspec"; sourceTree = "<group>"; };
 		C86ECFB04CF08B84B71AA157 /* Pods_Objective_Zip_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Objective_Zip_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAE1F929E29D87A74CD5E0A /* Pods-Objective-Zip OS X Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-Zip OS X Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-Zip OS X Tests/Pods-Objective-Zip OS X Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EDAFC21C5C599B08F1A8B092 /* Pods-Objective-Zip Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Objective-Zip Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Objective-Zip Tests/Pods-Objective-Zip Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -279,6 +280,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				C34B01831F2840D100B1C58E /* objective-zip.podspec */,
 				8C6D353B10E56BA400B63EFA /* Objective-Zip */,
 				8C6D350110E56A4B00B63EFA /* MiniZip */,
 				8CD8B3E817766056005212EC /* ZLib */,

@@ -193,6 +193,8 @@
  */
 - (BOOL) goToNextFileInZip;
 
+
+- (BOOL) locateWithFileInfo:(nonnull OZFileInZipInfo *)fileInfo;
 /**
  @brief Locates a file by name in the zip file and selects it.
  <p>The selected file may then be read by obaining a OZZipReadStream with

@@ -216,6 +216,8 @@ static const NSInteger OZLocateFileResultFound= 1;
  */
 - (BOOL) goToNextFileInZipWithError:(NSError * __autoreleasing __nullable * __nullable)error;
 
+
+- (NSInteger) __attribute__((swift_error(nonnull_error))) locateWithFileInfo:(nonnull OZFileInZipInfo *)fileInfo error:(NSError * __autoreleasing __nullable * __nullable)error;
 /**
  @brief Locates a file by name in the zip file and selects it.
  <p>The selected file may then be read by obaining a OZZipReadStream with
